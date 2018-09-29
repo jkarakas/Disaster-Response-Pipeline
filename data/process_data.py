@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # coding=utf-8
 
-# The Data processing module
+# The Data processing script
 
 
 import sys

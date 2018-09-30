@@ -3,7 +3,7 @@
 In this project using two datasets of disstress mesages from three different channels and their response categories (36) and a data, NLP / Machinne learning pipeline we build an optimized classifier to predict in which response category is the message likelier to belong reducing the potential reaction time of 
 
 
-## Description
+## Description / Usage
 
 The project consists of the following parts:
 
@@ -21,7 +21,7 @@ The project consists of the following parts:
 
 
 
-- **The ML pipeline in the '/models' directory, which:**
+- **The NLP and Machine Learning pipeline in the '/models' directory, which:**
 
 	* Splits the dataset into training and test sets
 	* Builds a text processing and machine learning pipeline
@@ -44,5 +44,25 @@ The project consists of the following parts:
 		python run.py   
 		```   
 		2. Go to http://0.0.0.0:3001/   
+
+
+## Code structure
+
+- `app/`
+  - `template/`
+    - `master.html`  -  Main page of web application.
+    - `go.html`  -  Classification result page of web application.
+  - `run.py`  - Flask applications main file.
+
+- `data/`
+  - `disaster_categories.csv`  - Disaster categories dataset.
+  - `disaster_messages.csv`  - Disaster Messages dataset.
+  - `process_data.py`
+  - `DisasterResponse.db`   - The database with the merged and cleand data.
+
+- `models/`
+  - `train_classifier.py` - The NLP and ML pipeline script.
+  
+
 
 

@@ -118,7 +118,7 @@ def build_model():
 
     # set parameters for grid search
     parameters = {
-        'clf__estimator__criterion': ['gini', 'entropy'],
+        'vect__ngram_range': ((1, 1), (1, 2)),
         'tfidf__use_idf': [True, False],
         'tfidf__norm': ['l1', 'l2']
     }
@@ -152,7 +152,7 @@ def evaluate_model(model, X_test, Y_test, category_names):
 
     for i in range(len(category_names)):
         print("Label:", category_names[i])
-        print("---- Classification Repor")
+        print("---- Classification Report")
         print(classification_report(Y_test[:, i], Y_pred[:, i]))
 
 

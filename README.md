@@ -1,6 +1,6 @@
 # Disaster Response Pipeline 
 
-In this projec,t using two datasets of distress mesages from three different channels, their response categories (36) and a data, NLP / Machinne learning pipeline we build an optimized classifier to predict in which response category is the message likelier to belong reducing the potential reaction time of 
+In this project using two datasets of distress mesages from three different channels, their response categories (36) and a data, NLP / Machinne learning pipeline we build an optimized classifier to predict in which response category is the message likelier to belong reducing the potential reaction time of 
 
 <img src='media/demo.gif' width="800" height="500" />
 <br>

@@ -81,12 +81,14 @@ def create_first_plot(df):
 
 
 def create_second_plot(df, top_cat):
-    """Create a plotly figure of a messages per category barplot
+    """Create a plotly figure of a categories per genre stacked barplot
 
     Parameters
     ----------
     df : pandas.Dataframe
         The dataset
+    top_cat: list
+        The top 10 categories
 
     Returns
     -------

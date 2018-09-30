@@ -57,11 +57,14 @@ The project consists of the following parts:
 - `data/`
   - `disaster_categories.csv`  - Disaster categories dataset.
   - `disaster_messages.csv`  - Disaster Messages dataset.
-  - `process_data.py`
+  - `process_data.py` - The data processing pipeline script.
   - `DisasterResponse.db`   - The database with the merged and cleand data.
 
 - `models/`
   - `train_classifier.py` - The NLP and ML pipeline script.
+
+ - `media/`
+  - `screenshot.png` - App screenshot.
   
 
 

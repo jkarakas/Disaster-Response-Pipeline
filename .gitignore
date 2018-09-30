@@ -107,4 +107,4 @@ venv.bak/
 .pkl
 
 # the notebooks
-.notebooks/
+notebooks/

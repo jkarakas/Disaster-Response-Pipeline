@@ -41,6 +41,8 @@ The project consists of the following parts:
 
 - **The Flask app in the `./app` directory.**
 
+	When a user inputs a message into the app, the app returns classification results for all 36 categories.
+
 	**Usage:**   
 	- From the `/app` directory Run the following command to run the web app:
 

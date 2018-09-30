@@ -2,6 +2,8 @@
 
 In this project using two datasets of disstress mesages from three different channels and their response categories (36) and a data, NLP / Machinne learning pipeline we build an optimized classifier to predict in which response category is the message likelier to belong reducing the potential reaction time of 
 
+<img src='media/demo.gif' width="800" height="500" />
+<br>
 
 ## Description / Usage
 
@@ -14,10 +16,11 @@ The project consists of the following parts:
 	* Stores it in a SQLite database
 	
 		**Usage:**    
-			Provide the filepaths of the messages and categories datasets as the first and second argument respectively, as well as the filepath of the database to save the cleaned data to as the third argument. For example:    
-			```
+			From the `/data` directory provide the filepaths of the messages and categories datasets as the first and second argument respectively, as well as the filepath of the database to save the cleaned data to as the third argument. For example:    
+
+
 			python process_data.py disaster_messages.csv disaster_categories.csv DisasterResponse.db
-            ```
+
 
 
 
@@ -30,20 +33,22 @@ The project consists of the following parts:
 	* Exports the final model as a pickle file  
 
 		**Usage:** 
-			Provide the filepath of the disaster messages database as the first argument and the filepath of the pickle file to save the model to as the second argument. For example:    
-			```   
+			From the `/models` directory provide the filepath of the disaster messages database as the first argument and the filepath of the pickle file to save the model to as the second argument. For example:    
+
+
 			 python train_classifier.py ../data/DisasterResponse.db classifier.pkl
-			 ```
 
 
 - **The Flask app in the `./app` directory.**
 
 	**Usage:**   
-		1. Run the following command in the app's directory to run the web app:   
-		```  
-		python run.py   
-		```   
-		2. Go to http://0.0.0.0:3001/   
+	- From the `/app` directory Run the following command to run the web app:
+
+	```  
+	python run.py   
+	```   
+
+	- Go to http://0.0.0.0:3001/   
 
 
 ## Code structure
@@ -63,8 +68,8 @@ The project consists of the following parts:
 - `models/`
   - `train_classifier.py` - The NLP and ML pipeline script.
 
- - `media/`
-  - `screenshot.png` - App screenshot.
+ - `media/` 
+ 	- `demo.gif` - A small demo gif of the appliction.
   
 
 

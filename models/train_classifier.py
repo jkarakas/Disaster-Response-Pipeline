@@ -76,7 +76,7 @@ def tokenize(text):
     """
 
     # normalize
-    text = re.sub(r"[^a-zA-Z0-9]", " ", text)
+    text = re.sub(r"[^a-zA-Z0-9]", " ", text.lower())
 
     # tokenize
     tokens = word_tokenize(text)
@@ -87,10 +87,10 @@ def tokenize(text):
     # initiate Lemmatizer
     lemmatizer = WordNetLemmatizer()
 
-    # Lemmatize, convert to lower case and strip
+    # Lemmatize and strip
     clean_tokens = []
     for word in words:
-        clean_word = lemmatizer.lemmatize(word).lower().strip()
+        clean_word = lemmatizer.lemmatize(word).strip()
         clean_tokens.append(clean_word)
 
     return clean_tokens
@@ -150,9 +150,9 @@ def evaluate_model(model, X_test, Y_test, category_names):
 
     Y_pred = model.predict(X_test)
 
+    print("----Classification Report per Category:\n")
     for i in range(len(category_names)):
         print("Label:", category_names[i])
-        print("---- Classification Report")
         print(classification_report(Y_test[:, i], Y_pred[:, i]))
 
 
@@ -197,6 +197,7 @@ def main():
         print('Trained model saved!')
 
     else:
+
         print('Please provide the filepath of the disaster messages database '
               'as the first argument and the filepath of the pickle file to '
               'save the model to as the second argument. \n\nExample: python '

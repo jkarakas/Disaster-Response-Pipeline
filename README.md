@@ -1,5 +1,10 @@
 # Disaster Response Pipeline 
 
+In this project using two datasets of disstress mesages from three different channels and their response categories (36) and a data, NLP / Machinne learning pipeline we build an optimized classifier to predict in which response category is the message likelier to belong reducing the potential reaction time of 
+
+
+## Description
+
 The project consists of the following parts:
 
 - **The ETL pipeline in the `/data` directory, which:**
